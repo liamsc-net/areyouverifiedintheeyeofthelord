@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You??</title>
+    <script src="js/script.js"></script>
+    <style>
+        body{
+            background-color: #222;
+        }
+        div {
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* border: 5px solid #FFFF00; */
+            /* padding: 10px; */
+            font-family: sans-serif;
+            color: white;
+        }
+        div h1 {
+            font-size: 10vmin;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1vmin;
+        }
+        form input{
+            font-size: 10vmin;
+            border-width: 1vmin;
+            border-radius: 5px;
+            border-color: rgb(0, 136, 255);
+            background-color: #fff;
+        }
+        form input:hover{
+            border-color: rgb(255, 0, 170);
+        }
+        form input:focus{
+            border-color: rgb(255, 0, 170);
+        }
+        h2 {
+            font-size: 6vmin;
+        }
+        form button {
+            font-size: 7vmin;
+            border-width: 1vmin;
+            border-radius: 5px;
+            border-color: rgb(0, 136, 255);
+            background-color: #fff;
+
+        }:hover{
+            border-color: rgb(255, 0, 170);
+        }
+        form {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <h2>Is that word in the bible?</h2>
+            <input type="text" id="input"><br><br>
+            <button type='button'onclick="isthatword();"> Submit </button> 
+            <h1 id="isit?" ></h1>
+          </form> 
+    </div>
+</body>
+</html>
