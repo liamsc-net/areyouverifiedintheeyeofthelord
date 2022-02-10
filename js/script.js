@@ -3,14 +3,17 @@ function areyou() {
     var yes = "";
 
     if (question%2 == 0)
-		var yes = "rgb(255, 0, 0)";
-	else
-		var yes = "rgb(0,255,0)";
+		  var yes = "rgb(255, 0, 0)";
+	  else
+		  var yes = "rgb(0,255,0)";
 
     document.body.style.background = yes;
-    if(yes == "rgb(255, 0, 0)")
-        document.getElementById("body").innerHTML = "NO";
-    else
-        document.getElementById("body").innerHTML = "Yes!";
 
+    if(yes == "rgb(255, 0, 0)"){
+        document.getElementById("body").innerHTML = "NO";
+        document.title = "Are You?? NO";
+    }else{
+        document.getElementById("body").innerHTML = "Yes!";
+        document.title = "Are You?? Yes!";
+    }
 }
