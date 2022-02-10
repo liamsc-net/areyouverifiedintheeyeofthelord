@@ -24,6 +24,9 @@ function areyou() {
   else if(color == "rgb(255, 191, 0)"){
     document.getElementById("body").innerHTML = "MaYBe?";
     document.title = "Are You?? MaYBe?";
+    var yourElement = document.getElementById('href');
+    yourElement.setAttribute('href', 'https://uquiz.com/quiz/Bv62IC/how-bad-is-your-religious-trauma');
+    yourElement.innerHTML = "Take this quiz";
   }else{
       document.getElementById("body").innerHTML = "Yes!";
       document.title = "Are You?? Yes!";
